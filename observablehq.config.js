@@ -1,19 +1,26 @@
 // See https://observablehq.com/framework/config for documentation.
 export default {
   // The app’s title; used in the sidebar and webpage titles.
-  title: "Student Project Template 2025",
+  title: "Lausannuaire",
 
   // The pages and sections in the sidebar. If you don’t specify this option,
   // all pages will be listed in alphabetical order. Listing pages explicitly
   // lets you organize them into sections and have unlisted pages.
   pages: [
     {
-      name: "Examples",
+      name: "Sections",
       pages: [
-        {name: "Dashboard", path: "/example-dashboard"},
-        {name: "Report", path: "/example-report"},
-        {name: "Weather", path: "/weather"},
-        {name: "Cadastre Rénové", path: "/cadastre-renove"},
+        // {name: "Dashboard", path: "/example-dashboard"},
+        {name: "Lausanne Means", path: "/lausanne-means"},
+        {name: "Lausanne New York Paris Means", path: "/lausanne-ny-paris-means"},
+        // {name: "Report", path: "/example-report"},
+        // {name: "Weather", path: "/weather"},
+        {name: "New York 1885", path: "/newyork-1885"},
+        {name: "Paris 1885", path: "/paris-1885"},
+        {name: "Lausanne 1885", path: "/lausanne-1885"},
+        {name: "Lausanne 1901", path: "/lausanne-1901"},
+        {name: "Lausanne 1923", path: "/lausanne-1923"},
+        {name: "Lausanne 1951", path: "/lausanne-1951"},
       ]
     }
   ],
