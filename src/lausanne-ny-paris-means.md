@@ -137,9 +137,10 @@ const categoryColors = {
     lighting: "#FFDAB9",
     construction_sites: "#FFA500",
 };
+```
 
-
-function stackedChart(data, {width} = {}) {
+```js
+function stackedChart(data, {width} = {}, {legend}= {legend: true}) {
   return Plot.plot({
     title: "Proportions of Categories by City",
     width,
@@ -147,7 +148,7 @@ function stackedChart(data, {width} = {}) {
     x: {label: "Ville", type: "band"},
     y: {label: "Percentage", percent: true},
     color: {
-      legend: true,
+      legend: legend,
       domain: Object.keys(categoryColors),
       range: Object.values(categoryColors),
       type: "ordinal"
@@ -161,4 +162,30 @@ function stackedChart(data, {width} = {}) {
 ```
 
 
+```js
+const filteredDemographics = demographics.filter(d =>
+    selectedCategories.includes(d.group)
+);
+```
+
 <div class="grid grid-cols-1"> <div class="card">${resize(width => stackedChart(demographics, {width}))}</div> </div>
+
+------------------
+
+En dessous, vous pouvez sélectionner les catégories à afficher dans le graphique empilé:
+
+```js
+const selectedCategories = view(Inputs.checkbox(Object.keys(categoryColors), {
+    value: [],
+    label: html`<b>Categories</b>`,
+    format: (x) =>
+        html`<span style="
+          text-transform: capitalize;
+          border-bottom: solid 2px ${categoryColors[x]};
+          margin-bottom: -2px;
+          color: ${categoryColors[x]};
+        ">${x}</span>`
+}))
+```
+<div class="grid grid-cols-1"> <div class="card">${resize(width => stackedChart(filteredDemographics, {width},
+    {legend:false}))}</div> </div>
