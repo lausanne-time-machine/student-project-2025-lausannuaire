@@ -142,11 +142,11 @@ const categoryColors = {
 ```js
 function stackedChart(data, {width} = {}, {legend}= {legend: true}) {
   return Plot.plot({
-    title: "Proportions of Categories by City",
+    title: "Proportions de catégories par ville",
     width,
     height: 800,
     x: {label: "Ville", type: "band"},
-    y: {label: "Percentage", percent: true},
+    y: {label: "Pourcentage", percent: true},
     color: {
       legend: legend,
       domain: Object.keys(categoryColors),

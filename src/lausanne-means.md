@@ -138,11 +138,11 @@ const categoryColors = {
 };
 function stackedChart(data, {width} = {}) {
   return Plot.plot({
-    title: "Proportions of Categories by Year",
+    title: "Proportions de catégories par année",
     width,
     height: 800,
-    x: {label: "Year", type: "band"},
-    y: {label: "Percentage", percent: true},
+    x: {label: "Année", type: "band"},
+    y: {label: "Pourcentage", percent: true},
     color: {
       legend: true,
       domain: Object.keys(categoryColors),

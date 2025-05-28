@@ -99,7 +99,7 @@ function createMapAndLayer(mapContainer, geojsonData) {
                 if (entries) {
                     const popupContent = entries.map(entry => {
 
-                        return `<strong>CATEGORIES:</strong> ${getCategories(entry).join(", ")}<br>` +
+                        return `<strong>CATEGORIES:</strong> ${getCategoriesForDisplay(entry).join(",\n")}<br>` +
                             columnNames.map(column => {
                                 return `<strong>${column}:</strong> ${entry[column]}<br>`;
                             }).join("") + "<hr>";
@@ -333,4 +333,16 @@ const selectedCategories = view(
     })
 );
 ```
+```js
+function getCategoriesForDisplay(entry) {
+    let categories = [];
+    Object.keys(categoryColors).forEach(category => {
+        const val = parseFloat(entry[category]);
+        if (!isNaN(val) && val > 0) {
+            categories.push(category +" " +val+"%");
+        }
+    });
 
+    return categories;
+}
+```
