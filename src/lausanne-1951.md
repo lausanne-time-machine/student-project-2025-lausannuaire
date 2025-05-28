@@ -333,7 +333,7 @@ function getCategoriesForDisplay(entry) {
 ```js
 const selectedCategories = view(
     Inputs.checkbox(Object.keys(categoryColors), {
-        value: Object.keys(categoryColors),
+        value: [],
         label: html`<b>Clusters</b>`,
         format: (x) =>
             html`<span style="
@@ -344,18 +344,4 @@ const selectedCategories = view(
         ">${x}</span>`
     })
 );
-```
-
-```js
-function getCategoriesForDisplay(entry) {
-    let categories = [];
-    Object.keys(categoryColors).forEach(category => {
-        const val = parseFloat(entry[category]);
-        if (!isNaN(val) && val > 0) {
-            categories.push(category +" " +val+"%");
-        }
-    });
-
-    return categories;
-}
 ```

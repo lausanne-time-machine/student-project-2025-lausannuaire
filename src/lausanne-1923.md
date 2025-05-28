@@ -321,7 +321,7 @@ function getCategories(entry) {
 ```js
 const selectedCategories = view(
     Inputs.checkbox(Object.keys(categoryColors), {
-        value: Object.keys(categoryColors),
+        value: [],
         label: html`<b>Clusters</b>`,
         format: (x) =>
             html`<span style="
