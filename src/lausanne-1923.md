@@ -285,9 +285,20 @@ const categoryColors = {
     medical_products: "#999999",
     education_professions: "#808080",
     widow: "#696969",
-    other: "#555555"
+
+    // Missing entries (grouped by similarity)
+
+    // Liberal professions
+    liberal_professions_construction: "#FF6666", // same as construction
+    liberal_professions_law: "#FF9999", // already defined
+    liberal_professions_finance: "#FF8080", // already defined
+
+    // Commerce
+    alcool_producer_seller: "#3399FF", // similar to garment_supplies
+    fabric_supply: "#1A8CFF", // similar to book_art_supply
+    lighting: "#007FFF", // similar to science_articles
+    other: "#555555",
 };
-categoryColors
 ```
 
 ```js

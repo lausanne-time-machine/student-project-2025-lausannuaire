@@ -223,70 +223,75 @@ const filteredMergeIDsSet = new Set(filteredMergeIDs);
 
 ```js
 const categoryColors = {
-    // Liberal professions
-    liberal_professions_law: "#FF9999",
-    liberal_professions_finance: "#FF8080",
-    liberal_professions_construction: "#FF6666",
-    liberal_professions_art: "#FF4D4D",
-    liberal_professions_engraving: "#FF3333",
-    liberal_professions_retail: "#FF1A1A",
+    // Liberal professions - Reds
+    liberal_professions_law: "#FF6666",
+        liberal_professions_finance: "#FF4D4D",
+        liberal_professions_construction: "#FF3333",
+        liberal_professions_art: "#FF1A1A",
+        liberal_professions_engraving: "#E60000",
+        liberal_professions_retail: "#CC0000",
 
-    // Associations and unions
-    associations_unions: "#FFA07A",
+        // Associations and unions - Oranges
+        associations_unions: "#FF9933",
 
-    // Commerce
-    local_commerce_groceries: "#99CCFF",
-    local_commerce_groceries_soap: "#80BFFF",
-    fine_articles: "#66B2FF",
-    luxury_items: "#4DA6FF",
-    garment_supplies: "#3399FF",
-    book_art_supply: "#1A8CFF",
-    science_articles: "#007FFF",
-    antiquarians: "#0066CC",
+        // Local commerce & retail - Blues
+        local_commerce_groceries: "#6699FF",
+        local_commerce_groceries_soap: "#4D88FF",
+        fine_articles: "#3380FF",
+        luxury_items: "#1A66FF",
+        garment_supplies: "#005CE6",
+        book_art_supply: "#0047B3",
+        science_articles: "#003380",
+        antiquarians: "#002366",
 
-    // Hospitality
-    hospitality_lodging: "#FFD700",
-    bathing_establishments: "#FFC700",
+        // Hospitality & alcohol - Yellows
+        hospitality_lodging: "#FFD633",
+        bathing_establishments: "#FFCC00",
+        alcool_producer_seller: "#FFB800",
 
-    // Production and processing
-    raw_material_production: "#90EE90",
-    raw_material_sales: "#77DD77",
-    raw_material_building: "#66CC66",
-    raw_material_agriculture: "#55BB55",
-    food_processing: "#44AA44",
-    craft_processing: "#339933",
-    construction_products: "#228822",
-    processing_articles: "#117711",
+        // Raw materials & agriculture - Greens
+        raw_material_production: "#99CC66",
+        raw_material_sales: "#85B85B",
+        raw_material_building: "#739E4D",
+        raw_material_agriculture: "#5E883D",
+        agricultural_products: "#4B7331",
+        livestock: "#A6D785",
 
-    // Livestock and agriculture
-    livestock: "#CCFFCC",
-    agricultural_products: "#BBFFBB",
+        // Food & craft processing - Olive greens
+        food_processing: "#809F40",
+        craft_processing: "#6B8633",
+        processing_articles: "#556622",
+        construction_products: "#445511",
 
-    // Transport and delivery
-    transport_professions: "#CCCCFF",
-    postal_delivery: "#B3B3FF",
-    containers: "#9999FF",
+        // Construction sites & lighting - Darker greens/teal
+        construction_sites: "#335522",
+        lighting: "#2B4D19",
 
-    // Services and tools
-    sharpening_service: "#FFB6C1",
-    tooling: "#FF99CC",
-    personal_care: "#FF80BF",
-    laundry: "#FF66B2",
+        // Transport & delivery - Purples
+        transport_professions: "#9999FF",
+        postal_delivery: "#8080FF",
+        containers: "#6666CC",
 
-    // Entertainment and leisure
-    entertainment_articles: "#DDA0DD",
-    recreational_leisure: "#CC99FF",
-    children_entertainment: "#BB88FF",
+        // Services and tools - Pinks/Rose
+        sharpening_service: "#FF99CC",
+        tooling: "#FF80B3",
+        personal_care: "#FF6699",
+        laundry: "#FF4D85",
 
-    // Miscellaneous
-    non_prestigious_garment: "#D3D3D3",
-    household_items: "#C0C0C0",
-    products_boats_home: "#A9A9A9",
-    medical_products: "#999999",
-    education_professions: "#808080",
-    widow: "#696969",
-    other: "#555555"
-};
+        // Entertainment and leisure - Lavender/Purple
+        entertainment_articles: "#CC99FF",
+        recreational_leisure: "#B266FF",
+        children_entertainment: "#9933FF",
+
+        // Miscellaneous - Grays
+        non_prestigious_garment: "#D3D3D3",
+        household_items: "#A9A9A9",
+        products_boats_home: "#808080",
+        medical_products: "#666666",
+        education_professions: "#4D4D4D",
+        widow: "#333333",
+        other: "#1A1A1A"
+}
 categoryColors
 ```
 

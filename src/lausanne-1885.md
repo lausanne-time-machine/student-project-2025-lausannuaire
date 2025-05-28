@@ -243,6 +243,8 @@ const categoryColors = {
     book_art_supply: "#1A8CFF",
     science_articles: "#007FFF",
     antiquarians: "#0066CC",
+    alcool_producer_seller: "#3399FF", // from previous CSV
+    beer_producer_seller: "#3399FF", // similar category
 
     // Hospitality
     hospitality_lodging: "#FFD700",
@@ -285,9 +287,14 @@ const categoryColors = {
     medical_products: "#999999",
     education_professions: "#808080",
     widow: "#696969",
-    other: "#555555"
+
+    // Additional
+    fabric_supply: "#1A8CFF",
+    lighting: "#007FFF",
+    construction_sites: "#228822",
+    other: "#555555",
 };
-categoryColors
+
 ```
 
 ```js
