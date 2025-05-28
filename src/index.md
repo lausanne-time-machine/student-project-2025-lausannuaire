@@ -18,5 +18,5 @@ title: Comparaison des métiers dans différentes villes
 Explorez diverses statistiques via les tableaux de bord dédiés.  
 Pour une meilleure expérience, **ouvrez plusieurs tableaux de bord dans des fenêtres séparées** afin de comparer les données simultanément.
 
-[Voir la présentation de la méthodologie PDF ](_file/data/presentation.pdf)
+[Voir la présentation de la méthodologie PDF ](./data/presentation.pdf)
 ---
