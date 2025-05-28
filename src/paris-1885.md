@@ -22,7 +22,7 @@ import "./plugins/leaflet-heat.js";
 ## Carte
 
 ```js
-const mydata = await FileAttachment("./data/1885_prompt_based_classification_results_paris_all_persons_normalized.csv").csv()
+const mydata = await FileAttachment("./data/paris_1885_normalized_with_coordinates.csv").csv()
 mydata.forEach((entry, index) => {
     entry.merge_id = index.toString();
 });
@@ -176,7 +176,7 @@ mapElements.layerControl.addOverlay(heatmapLayer, "Heatmap");
 
 ```js
 // const registre = FileAttachment("./data/lausanne-1888-cadastre-renove-registre-20250410.csv").csv()
-const registre = await FileAttachment("./data/1885_prompt_based_classification_results_paris_all_persons_normalized.csv").csv()
+const registre = await FileAttachment("./data/paris_1885_normalized_with_coordinates.csv").csv()
 registre.forEach((entry, index) => {
     entry.merge_id = index.toString();
     entry.CATEGORIES = getCategories(entry).join(", ");
@@ -186,7 +186,7 @@ registre.forEach((entry, index) => {
 ```js
 // Create a list of column names
 //  ,Unnamed: 0.1,Unnamed: 0,LASTNAME,FIRSTNAME,ORG,JOB,LOC,line,jobs,liberal_professions_law,associations_unions,liberal_professions_finance,local_commerce_groceries,hospitality_lodging,raw_material_production,livestock,transport_professions,sharpening_service,raw_material_sales,fine_articles,bathing_establishments,luxury_items,garment_supplies,book_art_supply,science_articles,beer_producer_seller,containers,laundry,raw_material_building,fabric_supply,lighting,construction_sites,liberal_professions_construction,entertainment_articles,processing_articles,antiquarians,non_prestigious_garment,raw_material_agriculture,household_items,products_boats_home,liberal_professions_art,personal_care,medical_products,agricultural_products,liberal_professions_engraving,local_commerce_groceries_soap,postal_delivery,children_entertainment,tooling,liberal_professions_retail,food_processing,recreational_leisure,craft_processing,construction_products,education_professions,widow,other,lon,lat
-const columnNames = ["LASTNAME", "FIRSTNAME", "CATEGORIES", "ORG", "JOB", "LOC", "line", "lon", "lat"]
+const columnNames = ["Nom", "Métier", "CATEGORIES", "Rue", "Numéro", "jobs", "lon", "lat"]
 ```
 
 ```js

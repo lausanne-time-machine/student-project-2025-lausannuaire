@@ -162,7 +162,7 @@ const categoryColors = {
 
 function stackedChart(data, {width} = {}) {
   return Plot.plot({
-    title: "Proportions of Categories by Year",
+    title: "Proportions of Categories by City",
     width,
     height: 800,
     x: {label: "Ville", type: "band"},
