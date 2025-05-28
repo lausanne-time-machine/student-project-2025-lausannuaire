@@ -21,6 +21,7 @@ export default {
         {name: "Lausanne 1901", path: "/lausanne-1901"},
         {name: "Lausanne 1923", path: "/lausanne-1923"},
         {name: "Lausanne 1951", path: "/lausanne-1951"},
+        {name: "Presentation", path: "/_file/data/presentation.pdf"},
       ]
     }
   ],
